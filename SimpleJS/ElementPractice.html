@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        onload = function () {
+
+            document.getElementById('btnImg').onclick = function () {
+                var img = document.createElement('img');
+                img.src = 'img/bird1.png';
+                document.getElementById('divContainer').appendChild(img);
+            }
+
+            document.getElementById('btnTxt').onclick = function () {
+                var txt = document.createElement('input');
+                txt.type = 'text';
+                document.getElementById('divContainer').appendChild(txt);
+            }
+
+            document.getElementById('btnHype').onclick = function () {
+                var hype = document.createElement('a');
+                hype.href = 'First.html';
+                hype.innerHTML = 'Show Link';
+                document.getElementById('divContainer').appendChild(hype);
+            }
+
+            document.getElementById('btnDelete').onclick = function () {
+                var divChildNodes = document.getElementById('divContainer').childNodes;
+                for (var i = divChildNodes.length - 1; i >= 0; i--) {
+                    document.getElementById('divContainer').removeChild(divChildNodes[i]);
+
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" id="btnImg" value="IMG" />
+    <input type="button" id="btnTxt" value="TEXT" />
+    <input type="button" id="btnHype" value="HYPE" />
+    <input type="button" id="btnDelete" value="Delete Element" />
+
+    <div id="divContainer">
+    </div>
+</body>
+
+</html>

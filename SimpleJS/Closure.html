@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+
+        //without IIFE
+        function celebrityIDCreator(theCelebrities) {
+            var i;
+            var uniqueID = 100;
+            for (i = 0; i < theCelebrities.length; i++) {
+                theCelebrities[i]["id"] = function () {
+                    return uniqueID + i;
+                }
+            }
+
+            return theCelebrities;
+        }
+
+        var actionCelebs = [{ name: "Stallone", id: 0 }, { name: "Cruise", id: 0 }, { name: "Willis", id: 0 }];
+
+        var createIdForActionCelebs = celebrityIDCreator(actionCelebs);
+
+        var stalloneID = createIdForActionCelebs[0];
+        console.log(stalloneID.id); // function
+        console.log(stalloneID.id()); // 103
+        console.log(typeof (stalloneID.id))
+        console.log(typeof (stalloneID.id()))
+
+        //with immediately invoke function expression
+        function celebrityIDCreator2(theCelebrities) {
+            var i;
+            var uniqueID = 100;
+            for (i = 0; i < theCelebrities.length; i++) {
+                theCelebrities[i]["id"] = function () {
+                    return uniqueID + i;
+                }(i)
+            }
+
+            return theCelebrities;
+        }
+
+        var actionCelebs2 = [{ name: "Stallone", id: 0 }, { name: "Cruise", id: 0 }, { name: "Willis", id: 0 }];
+
+        var createIdForActionCelebs2 = celebrityIDCreator2(actionCelebs2);
+
+        var cruiseID = createIdForActionCelebs2[1];
+        console.log(cruiseID.id); // 101
+
+        var willisID = createIdForActionCelebs2[2];
+        console.log(willisID.id); // 102
+
+    </script>
+</body>
+</html>

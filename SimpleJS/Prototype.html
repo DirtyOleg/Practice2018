@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function Person(name)
+        {
+            this.Name = name;
+        }
+
+        var p1 = new Person('p1');
+
+        Person.prototype.Age = 18;
+
+        var p2 = new Person('p2');
+
+        p2.__proto__.Gender = 'male/female';
+
+        var p3 = new Person('p3');
+
+        p1.Age = 20;
+        p2.Gender = 'male';
+
+        console.log(p3.Age);
+        console.log(p3.Gender);
+
+    </script>
+</body>
+</html>

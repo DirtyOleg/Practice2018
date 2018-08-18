@@ -68,7 +68,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="showtime.js" />
+    <Content Include="Closure.html" />
+    <Content Include="CountryFlagPractice.html" />
+    <Content Include="ElementPractice.html" />
+    <Content Include="InnerTextVSInnerHTML.html" />
+    <Content Include="onLoadMethod.html" />
+    <Content Include="Prototype.html" />
+    <Content Include="First.html" />
+    <Content Include="Rating.html" />
     <Content Include="Test.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -83,6 +90,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

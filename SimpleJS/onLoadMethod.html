@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        onload = function addEvent() {
+
+            document.getElementById('btnCal').onclick = function getResult() {
+
+                var numOne = parseInt(document.getElementById('txtNumOne').value);
+                var numTwo = parseInt(document.getElementById('txtNumTwo').value);
+
+                document.getElementById('txtResult').value = numOne + numTwo;
+            };
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="txtNumOne" id="txtNumOne" />
+    +
+    <input type="text" name="txtNumTwo" id="txtNumTwo" />
+    =
+    <input type="text" name="txtResult" id="txtResult" />
+    <br />
+    <input type="button" name="btnCal" id="btnCal" value="=" />
+</body>
+</html>

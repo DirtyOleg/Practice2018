@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        onload = function () {
+            var imgs = document.getElementsByName('rateImg');
+            for (var index in imgs) {
+                var clickIndex = 0;
+
+                imgs[index].onmouseover = function () {
+
+                    var index = parseInt(this.id);
+                    changeImg(index, imgs);
+                    //var id = this.id;
+                    //for (var i = 0; i < imgs.length; i++) {
+                    //    if (i <= id) {
+                    //        imgs[i].src = 'img/star2.png';
+                    //    }
+                    //    else {
+                    //        imgs[i].src = 'img/star1.png';
+                    //    }
+                    //}
+                }
+
+                imgs[index].onmouseout = function () {
+
+                    changeImg(clickIndex, imgs);
+                    //for (var i = 0; i < imgs.length; i++) {
+                    //    if (i <= clickIndex) {
+                    //        imgs[i].src = 'img/star2.png';
+                    //    }
+                    //    else {
+                    //        imgs[i].src = 'img/star1.png';
+                    //    }
+                    //}
+                }
+
+                imgs[index].onclick = function () {
+                    clickIndex = parseInt(this.id);
+                }
+            }
+        }
+
+        function changeImg(index, imgs) {
+            for (var i = 0; i < imgs.length; i++) {
+                if (i <= index) {
+                    imgs[i].src = 'img/star2.png';
+                }
+                else {
+                    imgs[i].src = 'img/star1.png';
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input type='image' name="rateImg" id="0" src="img/star2.png" />
+    <input type='image' name="rateImg" id="1" src="img/star1.png" />
+    <input type='image' name="rateImg" id="2" src="img/star1.png" />
+    <input type='image' name="rateImg" id="3" src="img/star1.png" />
+    <input type='image' name="rateImg" id="4" src="img/star1.png" />
+</body>
+</html>
