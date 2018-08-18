@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        //onload = function () {
+        //    var div1 = document.getElementById('div1');
+        //    for (var i = 0; i < 5; i++) {
+        //        var a = document.createElement('a');
+        //        a.onclick = function () {
+        //            event.target.style.color = 'white';
+        //            this.style.backgroundColor = 'blue';
+        //        };
+        //        a.id = i;
+        //        a.innerHTML = 'click me ' + i + '<br />';
+        //        a.style.color = 'yellow';
+        //        div1.appendChild(a);
+        //    }
+        //};
+
+        onload = function () {
+            var left = 10;
+            var top = 10;
+            var width = 500;
+            var height = 500;
+            var distance = 10;
+            var parentdiv = document.getElementById('div2');
+
+            for (var i = 0; i < 5; i++) {
+                left += distance;
+                top += distance;
+                width -= 2 * distance;
+                height -= 2 * distance;
+
+                var div = document.createElement('div');
+                div.style = "position:absolute; left:" + left + "px; top:" + top + "px; width:" + width + "px; height:" + height + "px; border:2px solid red;"
+                parentdiv.appendChild(div);
+            }
+            
+        }        
+    </script>  
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+</body>
+</html>

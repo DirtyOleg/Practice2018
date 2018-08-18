@@ -76,7 +76,7 @@
     <Content Include="Prototype.html" />
     <Content Include="First.html" />
     <Content Include="Rating.html" />
-    <Content Include="Test.html" />
+    <Content Include="Test01.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
