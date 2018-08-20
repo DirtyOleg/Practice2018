@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLPractice", "XMLPractice\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleJS", "SimpleJS\SimpleJS.csproj", "{1BE8E9D2-5542-4406-BFC3-5127B771299D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleJQuery", "SimpleJQuery\SimpleJQuery.csproj", "{9CE5A4C0-76D8-4F73-8299-29F238F81D52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{1BE8E9D2-5542-4406-BFC3-5127B771299D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BE8E9D2-5542-4406-BFC3-5127B771299D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BE8E9D2-5542-4406-BFC3-5127B771299D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE5A4C0-76D8-4F73-8299-29F238F81D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE5A4C0-76D8-4F73-8299-29F238F81D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE5A4C0-76D8-4F73-8299-29F238F81D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE5A4C0-76D8-4F73-8299-29F238F81D52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

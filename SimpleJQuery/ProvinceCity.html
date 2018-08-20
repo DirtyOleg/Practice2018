@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.3.1.min.js"></script>
+    <script>
+        var datas = {
+            "北京": ["朝阳", "海淀", "昌平", "丰台"],
+            "山东": ["青岛", "济南", "烟台"],
+            "山西": ["大同", "太原", "运城", "长治"],
+            "河南": ["洛阳", "开封", "郑州", "驻马店"],
+            "河北": ["石家庄", "张家口", "保定"]
+        };
+
+        $(document).ready(function () {
+
+            var provinceSelect = $("<select id='province'></select>");
+            provinceSelect.appendTo($('body'));
+            $.each(datas, function (key, value) {
+                var provinceOption = $("<option id='" + key + "'>" + key + "</option>");
+                provinceOption.appendTo(provinceSelect);
+            });
+
+            var citySelect = $("<select></select>");
+            citySelect.appendTo('body');
+            refreshCity(provinceSelect.val(), citySelect);
+
+            provinceSelect.change(function () {
+                $(citySelect).empty();
+                refreshCity($(this).val(), citySelect);
+            });
+        });
+
+        function refreshCity(province, citySelect) {
+            var cities = datas[province];
+            $.each(cities, function (index, value) {
+                var cityOption = $("<option>" + value + "</option>");
+                cityOption.appendTo(citySelect);
+            });
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function () {
+
+                $('#btnOne').click(function () {
+                    $("#divContain").append($('<b>This is b tag</b><br />'));
+                });
+
+                $('#btnTwo').click(function () {
+                    $('<b>Another b tag</b><br />').appendTo($('#divContain'));
+                });
+
+                $('#btnThree').click(function () {
+                    $('<p>PPPP</p>').appendTo($('#divContain'));
+                });
+
+                $('#btnRemove').click(function () {
+                    $('#divContain').remove();
+                });
+            });
+    </script>
+</head>
+<body>
+    <button id="btnOne">BtagOne</button>
+    <button id="btnTwo">BtagTwo</button>
+    <button id="btnThree">PtagOne</button>
+    <button id="btnRemove">Remove</button>
+    <div id="divContain"></div>
+</body>
+</html>

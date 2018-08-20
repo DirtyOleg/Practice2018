@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('li').hover(
+                function () {
+                    $(this).css('color', 'green')
+                        .prevAll()
+                        .css('color', 'red')
+                        .end()
+                        .nextAll()
+                        .css('color', 'blue');
+                },
+                function () {
+                    $('li').css('color', 'black');
+                })
+                .click(function () {
+                    var parentId = $(this).parent('ul').attr('id');
+                    var targetId = (parseInt(parentId[2]) + 1) % 2;
+                    var target = "#ul" + targetId;
+                    $(this).appendTo(target);
+                });
+
+        });
+    </script>
+</head>
+<body>
+    <ul id="ul0">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+    <br />
+    <hr />
+    <br />
+    <ul id="ul1"></ul>
+</body>
+</html>
