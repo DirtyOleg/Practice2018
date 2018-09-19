@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleJS", "SimpleJS\Simple
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleJQuery", "SimpleJQuery\SimpleJQuery.csproj", "{9CE5A4C0-76D8-4F73-8299-29F238F81D52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Random Test", "Random Test\Random Test.csproj", "{8E364912-B994-4779-A6D5-3008379FE309}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{9CE5A4C0-76D8-4F73-8299-29F238F81D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CE5A4C0-76D8-4F73-8299-29F238F81D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CE5A4C0-76D8-4F73-8299-29F238F81D52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E364912-B994-4779-A6D5-3008379FE309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E364912-B994-4779-A6D5-3008379FE309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E364912-B994-4779-A6D5-3008379FE309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E364912-B994-4779-A6D5-3008379FE309}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
