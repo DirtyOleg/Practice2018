@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddOperation", "AddOperatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubOperation", "SubOperation\SubOperation.csproj", "{6FCCCAF7-7958-4620-90B9-872BA9856011}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleOperation", "MultipleOperation\MultipleOperation.csproj", "{71AC8471-64F4-48BA-B189-8232C9DC8E8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultipleOperation", "MultipleOperation\MultipleOperation.csproj", "{71AC8471-64F4-48BA-B189-8232C9DC8E8A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectToDatabase", "ConnectToDatabase\ConnectToDatabase.csproj", "{28AED75A-BC1A-44E1-920E-13F4D7FFC28D}"
 EndProject
@@ -26,6 +26,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleJS", "SimpleJS\SimpleJS.csproj", "{1BE8E9D2-5542-4406-BFC3-5127B771299D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleJQuery", "SimpleJQuery\SimpleJQuery.csproj", "{9CE5A4C0-76D8-4F73-8299-29F238F81D52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test Project", "Test Project\Test Project.csproj", "{2A618622-5BB8-4D03-829C-A465537F92E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +79,10 @@ Global
 		{9CE5A4C0-76D8-4F73-8299-29F238F81D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CE5A4C0-76D8-4F73-8299-29F238F81D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CE5A4C0-76D8-4F73-8299-29F238F81D52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A618622-5BB8-4D03-829C-A465537F92E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A618622-5BB8-4D03-829C-A465537F92E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A618622-5BB8-4D03-829C-A465537F92E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A618622-5BB8-4D03-829C-A465537F92E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
