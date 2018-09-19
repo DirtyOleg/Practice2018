@@ -1,5 +1,8 @@
 ﻿using System;
-using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Test_Project
 {
@@ -7,16 +10,6 @@ namespace Test_Project
     {
         static void Main(string[] args)
         {
-            Record r = new Record() { id = 0 };
-            
-            Console.WriteLine($"({Marshal.SizeOf(r)})");
-            Console.Read();
         }
-    }
-
-    struct Record
-    {
-        public int id;
-        const string nothing = "Place Holder";
     }
 }
